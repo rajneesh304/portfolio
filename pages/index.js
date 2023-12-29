@@ -57,9 +57,8 @@ const Home = () => {
         </div>
 
         {/* particles */}
-        <div className=''>
+        <ParticlesContainer />
 
-        </div>
 
         {/* avatar */}
         <motion.div
@@ -73,7 +72,7 @@ const Home = () => {
           <Avatar />
         </motion.div>
       </div>
-    </div>
+    </div >
   );
 };
 
