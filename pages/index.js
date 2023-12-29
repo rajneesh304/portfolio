@@ -9,14 +9,16 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants'
 
+// import type animation
+import { TypeAnimation } from 'react-type-animation'
 
 const Home = () => {
   return (
     <div className='bg-primary/60 h-full'>
       {/* text */}
-      <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>text
+      <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
-          <motion.h1
+          {/* <motion.h1
             variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate='show'
@@ -24,7 +26,18 @@ const Home = () => {
             className='h1'>
             Transforming ideas <br /> Into
             <span className='text-accent'>Digital Reality</span>
-          </motion.h1>
+          </motion.h1> */}
+          <div
+            className='h1 capitalize'>
+            I am a <br />
+            <span className='text-accent'>
+              <TypeAnimation sequence={[
+                'Developer', 2000,
+                'Designer', 2000,
+                'System engineer', 2000,
+              ]} />
+            </span>
+          </div>
           <motion.p
             variants={fadeIn('down', 0.3)}
             initial='hidden'
@@ -61,7 +74,7 @@ const Home = () => {
 
 
         {/* avatar */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn('up', 0.5)}
           initial='hidden'
           animate='show'
@@ -70,7 +83,7 @@ const Home = () => {
           className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
         >
           <Avatar />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div >
   );

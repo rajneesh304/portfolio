@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 
 // import required modules
 import { Pagination } from 'swiper'
-
+import Link from 'next/link'
 // icons
 import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image'
@@ -21,20 +21,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/oyg2.png',
+          url: 'https://oyg.studio'
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/simpleplus.png',
+          url: 'https://simpleplus.in'
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
+          path: '/hamarasaahas.png',
+          url: 'https://hamarasaahas.org'
+        }
       ],
     },
     {
@@ -77,13 +76,14 @@ const WorkSlider = () => {
                 <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={imageIndex}>
                   <div className='overflow-hidden flex items-center justify-center relative group'>
                     {/* image */}
-                    <Image
+                    <Link href={image.url ? `${image.url}` : ''} target='_blank'><Image
                       src={image.path}
                       width={500}
                       height={300}
                       alt='' />
+                    </Link>
                     {/* overlay gradient */}
-                    <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+                    <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700 pointer-events-none'></div>
                     {/* title */}
                     <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
                       <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em] '>
@@ -103,7 +103,7 @@ const WorkSlider = () => {
         </SwiperSlide>
       );
     })}
-  </Swiper>;
+  </Swiper >;
 };
 
 export default WorkSlider;
