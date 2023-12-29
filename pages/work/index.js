@@ -27,7 +27,7 @@ const Work = () => {
             animate='show'
             exit='hidden'
             className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu tortor neque. Curabitur mattis viverra lacus, in consectetur dui varius eget.
+            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu tortor neque. Curabitur mattis viverra lacus, in consectetur dui varius eget. */}
           </motion.p>
         </div>
         {/* slider */}
