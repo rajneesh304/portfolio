@@ -4,15 +4,21 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaJava,
+  FaAws
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiMongodb,
+  SiCplusplus,
+  SiPython,
+  SiGit,
+  SiDocker,
+  SiKubernetes,
+  SiMysql,
+  SiGooglecloud,
+  SiPostgresql, SiCloudflare, SiNginx
 } from "react-icons/si";
 
 
@@ -22,33 +28,40 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Frontend',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'Backend',
+        icons: [<FaJava />, <SiCplusplus />, <SiPython />],
       },
+      ,
+      {
+        title: 'Databases',
+        icons: [<SiMysql />, <SiMongodb />, <SiPostgresql />],
+      },
+      {
+        title: 'Tools',
+        icons: [<SiDocker />, <SiGit />, <SiKubernetes />, <SiNginx />, <SiGooglecloud />, <FaAws />, <SiCloudflare />],
+      }
     ],
   },
   {
-    title: 'awards',
+    title: 'education',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'M.tech. in Computer Science and Information Security - IIIT, Hyderabad',
+        stage: '2018 - 2020',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'B.E. in Electronics and Computer Engineering - MBM Engineering College, Jodnpur',
+        stage: '2012 - 2016',
       },
     ],
   },
@@ -56,16 +69,16 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Senior Applications Engineer - Oracle India Pvt. Ltd.',
+        stage: '2023 - current',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Applications Engineer - Oracle India Pvt. Ltd.',
+        stage: '2020 - 2023',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Intern - TCS',
+        stage: '2017 - 2017',
       },
     ],
   },
@@ -73,16 +86,12 @@ const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Oracle Cloud Infrastructure Foundations - Oracle',
+        stage: '2021',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Deep Learning Specialization - Coursera',
+        stage: '2022',
       },
     ],
   },

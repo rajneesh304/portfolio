@@ -11,22 +11,17 @@ import { FreeMode, Pagination } from 'swiper'
 
 // icons
 import {
-  RxCrop,
   RxPencil2,
   RxDesktop,
-  RxReader,
-  RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
+import {
+  FaDatabase, FaTools
+} from "react-icons/fa";
 
 
 // data
 const serviceData = [
-  {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
   {
     icon: <RxPencil2 />,
     title: 'Design',
@@ -34,17 +29,16 @@ const serviceData = [
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
+    title: 'Frontend',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
+    icon: <FaDatabase />,
+    title: 'Backend',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
+  }, {
+    icon: <FaTools />,
+    title: 'Automation',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
 ];
