@@ -143,7 +143,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu tortor neque. Curabitur mattis viverra lacus, in consectetur dui varius eget.
+          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu tortor neque. Curabitur mattis viverra lacus, in consectetur dui varius eget. */}
         </motion.p>
         {/* counters */}
         <motion.div
