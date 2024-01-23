@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . . --exclude=node_modules --exclude=.next
 
 RUN npm run build
 
