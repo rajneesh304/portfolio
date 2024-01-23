@@ -109,12 +109,17 @@ import { fadeIn } from "../../variants";
 
 // counter
 import CountUp from "react-countup";
+import Head from "next/head";
 
 const About = () => {
   const [index, setIndex] = useState(0);
 
   return (<div
     className="h-full bg-primary/30 py-32 text-center xl:text-left ">
+    <Head>
+      <title>rajneesh.about</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Circles />
     {/* avatar img */}
     <motion.div

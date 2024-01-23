@@ -6,8 +6,13 @@ import Circles from "../../components/Circles";
 // framer motion
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
+import Head from "next/head";
 const Services = () => {
   return (<div className="h-full bg-primary/30 py-36 flex items-center">
+    <Head>
+      <title>rajneesh.services</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Circles />
     <div className="container mx-auto ">
       <div className="flex flex-col xl:flex-row gap-x-8 ">
@@ -27,7 +32,7 @@ const Services = () => {
             animate='show'
             exit='hidden'
             className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu tortor neque. Curabitur mattis viverra lacus, in consectetur dui varius eget.
+            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu tortor neque. Curabitur mattis viverra lacus, in consectetur dui varius eget. */}
           </motion.p>
         </div>
         {/* slider */}
