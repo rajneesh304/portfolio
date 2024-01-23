@@ -6,8 +6,13 @@ import Circles from "../../components/Circles";
 // framer motion
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
+import Head from "next/head";
 const Work = () => {
   return (<div className="h-full bg-primary/30 py-36 flex items-center">
+    <Head>
+      <title>rajneesh.work</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Circles />
     <div className="container mx-auto ">
       <div className="flex flex-col xl:flex-row gap-x-8 ">
