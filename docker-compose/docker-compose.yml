@@ -2,18 +2,24 @@ version: "3.8"
 
 services:
   portfolio:
+    build:
+      context: ../
+      dockerfile: Dockerfile
     image: portfolio:latest
     container_name: portfolio
     restart: always
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`rajneesh.dev`)" # 🌐 Match your domain
-      - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
-      - "traefik.http.services.portfolio.loadbalancer.server.port=5678"
-    networks:
-      - web # Connect to the Traefik network
-
-networks:
-  web:
-    external: true
+    ports:
+      - "3000:3000"
+    command: ["npm", "start", "--", "-H", "0.0.0.0"]
+    # Uncomment and adjust the following if you want to use Traefik
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.portfolio.rule=Host(`rajneesh.dev`)"
+    #   - "traefik.http.routers.portfolio.entrypoints=websecure"
+    #   - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
+    #   - "traefik.http.services.portfolio.loadbalancer.server.port=3000"
+    # networks:
+    #   - web
+# networks:
+#   web:
+#     external: true
