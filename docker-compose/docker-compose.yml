@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  portfolio:
+    image: portfolio:latest
+    container_name: portfolio
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`rajneesh.dev`)" # 🌐 Match your domain
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=5678"
+    networks:
+      - web # Connect to the Traefik network
+
+networks:
+  web:
+    external: true
