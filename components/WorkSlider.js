@@ -19,17 +19,17 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "OYG Studio",
           path: "/oyg2.png",
           url: "https://oyg.studio",
         },
         {
-          title: "title",
+          title: "Simple Plus",
           path: "/simpleplus.png",
           url: "https://simpleplus.in",
         },
         {
-          title: "title",
+          title: "Hamara Saahas",
           path: "/hamarasaahas.png",
           url: "https://hamarasaahas.org",
         },

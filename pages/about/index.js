@@ -73,16 +73,20 @@ const aboutData = [
     title: "experience",
     info: [
       {
+        title: "SDE 2 - Demandbase",
+        stage: "May, 2025 - August, 2025",
+      },
+      {
         title: "Senior Applications Engineer - Oracle India Pvt. Ltd.",
-        stage: "2023 - current",
+        stage: "March, 2023 - May, 2025",
       },
       {
         title: "Applications Engineer - Oracle India Pvt. Ltd.",
-        stage: "2020 - 2023",
+        stage: "September, 2020 - March, 2023",
       },
       {
         title: "Intern - TCS",
-        stage: "2017 - 2017",
+        stage: "January, 2017 - June, 2017",
       },
     ],
   },
